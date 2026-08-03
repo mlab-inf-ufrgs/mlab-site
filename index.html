@@ -40,8 +40,15 @@
     <canvas id="particles"></canvas>
     <div class="hero-content">
       <div class="hero-badge">INF · UFRGS · Est. 2024</div>
-      <h1 class="hero-title">Machine Learning &amp;<br /><span class="gradient-text">Applications
-          in</span><br />Biomedical Data Lab</h1>
+      <div class="hero-brand-container">
+        <div class="hero-logo-container">
+          <img src="img/MLAB_Logo(noText).png" alt="MLAB Logo" class="hero-logo-large" />
+        </div>
+        <div class="hero-text-container">
+          <h1 class="hero-brand-name">MLAB</h1>
+          <p class="hero-brand-title">Machine Learning &amp; Applications in<br />Biomedical Data Lab</p>
+        </div>
+      </div>
       <p class="hero-sub">Advancing the frontiers of Artificial Intelligence for the common good in healthcare.</p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">Explore Research</a>
@@ -109,14 +116,16 @@
       </div>
       <div class="filter-tabs" id="peopleFilter">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="Coordination">Coordination</button>
+        <button class="filter-btn" data-filter="coordination">Coordination</button>
+        <button class="filter-btn" data-filter="postdoc">PostDoc</button>
         <button class="filter-btn" data-filter="phd">PhD</button>
         <button class="filter-btn" data-filter="masters">Masters</button>
         <button class="filter-btn" data-filter="undergrad">Undergrad</button>
+        <button class="filter-btn" data-filter="collaborators">Collaborators</button>
       </div>
       <div class="people-grid" id="peopleGrid">
 
-        <div class="person-card" data-role="Coordination">
+        <div class="person-card" data-role="coordination">
           <img src="img/team/mariana.jpeg" alt="Profa. Dra. Mariana Recamonde Mendoza" class="person-avatar" />
           <div class="person-info">
             <h3>Profa. Dra. Mariana Recamonde Mendoza</h3>
@@ -145,6 +154,20 @@
           </div>
         </div>
 
+        <div class="person-card" data-role="postdoc">
+          <img src="img/team/LuizFernando.jpeg" alt="LuizFernando" class="person-avatar" />
+          <div class="person-info">
+            <h3>Luiz Fernando Rodrigues Jr.</h3>
+            <span class="person-role postdoc">postdoc</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+        
         <div class="person-card" data-role="phd">
           <img src="img/team/Renan.jpg" alt="Renan Andrade" class="person-avatar" />
           <div class="person-info">
@@ -173,37 +196,351 @@
           </div>
         </div>
 
-        <div class="person-card" data-role="masters">
-          <div class="person-avatar" style="background: linear-gradient(135deg,#06b6d4,#6366f1)">MC</div>
+        <div class="person-card" data-role="phd">
+          <img src="img/team/Daniel-Arnold.jpg" alt="Daniel Arnold" class="person-avatar" />
           <div class="person-info">
-            <h3>Marina Costa</h3>
-            <span class="person-role masters">MSc Student</span>
-            <p>NLP for Portuguese, Sentiment Analysis</p>
+            <h3>Daniel Arnold</h3>
+            <span class="person-role phd">PhD Student</span>
+            <p>A short list of key areas of knowledge</p>
             <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
               <a href="#" title="GitHub">💻</a>
             </div>
           </div>
         </div>
 
         <div class="person-card" data-role="masters">
-          <div class="person-avatar" style="background: linear-gradient(135deg,#10b981,#6366f1)">RA</div>
+          <img src="img/team/Laura.jpg" alt="Laura" class="person-avatar" />
           <div class="person-info">
-            <h3>Rafael Alves</h3>
+            <h3>Laura Speggiorin</h3>
             <span class="person-role masters">MSc Student</span>
-            <p>Autonomous Agents, Sim-to-Real Transfer</p>
+            <p>A short list of key areas of knowledge</p>
             <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Edmar.jpg" alt="Edmar" class="person-avatar" />
+          <div class="person-info">
+            <h3>Edmar Bevilaqua</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Felipe.jpeg" alt="Felipe" class="person-avatar" />
+          <div class="person-info">
+            <h3>Felipe Alves</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Guilherme Malta.jpeg" alt="Guilherme Malta" class="person-avatar" />
+          <div class="person-info">
+            <h3>Guilherme Malta</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Silmara.jpeg" alt="Silmara" class="person-avatar" />
+          <div class="person-info">
+            <h3>Silmara Barnabé</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Mateus.jpg" alt="Mateus" class="person-avatar" />
+          <div class="person-info">
+            <h3>Mateus Balda</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Luciano.jpg" alt="Luciano" class="person-avatar" />
+          <div class="person-info">
+            <h3>Luciano Farias</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Ana Ferreira.jpeg" alt="Ana Ferreira" class="person-avatar" />
+          <div class="person-info">
+            <h3>Ana Carolina Ferreira</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/HenriqueSanchez.jpg" alt="Henrique" class="person-avatar" />
+          <div class="person-info">
+            <h3>Henrique Sanchez</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="masters">
+          <img src="img/team/Ana Schardosim.jpg" alt="Ana Schardosim" class="person-avatar" />
+          <div class="person-info">
+            <h3>Ana Laura Schardosim</h3>
+            <span class="person-role masters">MSc Student</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
               <a href="#" title="GitHub">💻</a>
             </div>
           </div>
         </div>
 
         <div class="person-card" data-role="undergrad">
-          <div class="person-avatar" style="background: linear-gradient(135deg,#ec4899,#f43f5e)">JM</div>
+          <img src="img/team/Kamille.jpg" alt="Kamille" class="person-avatar" />
           <div class="person-info">
-            <h3>Julia Martins</h3>
-            <span class="person-role undergrad">Undergrad Researcher</span>
-            <p>Data Augmentation, Few-Shot Learning</p>
+            <h3>Kamille Konarzewski</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
             <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Maximus.jpg" alt="Maximus" class="person-avatar" />
+          <div class="person-info">
+            <h3>Maximus Borges</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Carol.jpg" alt="Carol" class="person-avatar" />
+          <div class="person-info">
+            <h3>Caroline Bauman</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Eduarda.PNG" alt="Eduarda" class="person-avatar" />
+          <div class="person-info">
+            <h3>Eduarda Tessari</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Lucca.jpeg" alt="Lucca" class="person-avatar" />
+          <div class="person-info">
+            <h3>Lucca Claus</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Luis.jpeg" alt="Luis" class="person-avatar" />
+          <div class="person-info">
+            <h3>Luis Coelho</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Vinicius.jpeg" alt="Vinicius" class="person-avatar" />
+          <div class="person-info">
+            <h3>Vinicius Piacini</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Paulo_Ceccato.jpeg" alt="Paulo" class="person-avatar" />
+          <div class="person-info">
+            <h3>Paulo Ceccato</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Deborah.jpg" alt="Deborah" class="person-avatar" />
+          <div class="person-info">
+            <h3>Déborah Ribeiro</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Leonardo.jpg" alt="Leonardo" class="person-avatar" />
+          <div class="person-info">
+            <h3>Leonardo Gasparote</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/Alice Varella.jpg" alt="Alice" class="person-avatar" />
+          <div class="person-info">
+            <h3>Alice Varella</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="undergrad">
+          <img src="img/team/MariaEduarda.png" alt="MariaEduarda" class="person-avatar" />
+          <div class="person-info">
+            <h3>Maria Eduarda da Silveira</h3>
+            <span class="person-role undergrad">Undergrad</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="collaborators">
+          <img src="img/team/thaynekowalski.jpeg" alt="Thayne Kowalski" class="person-avatar" />
+          <div class="person-info">
+            <h3>Thayne Kowalski</h3>
+            <span class="person-role collaborators">collaborators</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-card" data-role="collaborators">
+          <img src="img/team/heloisa-oss-boll.png" alt="Heloisa Oss Boll" class="person-avatar" />
+          <div class="person-info">
+            <h3>Heloísa Oss Boll</h3>
+            <span class="person-role collaborators">collaborators</span>
+            <p>A short list of key areas of knowledge</p>
+            <div class="person-links">
+              <a href="#" title="Website">🌐</a>
+              <a href="#" title="Scholar">📚</a>
               <a href="#" title="GitHub">💻</a>
             </div>
           </div>
